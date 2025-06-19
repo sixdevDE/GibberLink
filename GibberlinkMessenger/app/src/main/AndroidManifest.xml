@@ -3,6 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.sixdev.gibberlink">
 
+    <!-- Kamera-Berechtigung -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+
     <application
         android:exported="true"
         android:icon="@mipmap/gibber_icon"
@@ -28,7 +32,7 @@
             android:exported="true" />
         <activity android:name="com.sixdev.gibberlink.ChatActivity" />
 
-        <!-- Zxing-CaptureActivity mit Theme-Konfliktauflösung -->
+        <!-- ZXing CaptureActivity mit Theme-Konfliktlösung -->
         <activity
             android:name="com.journeyapps.barcodescanner.CaptureActivity"
             android:exported="false"

@@ -13,76 +13,53 @@ import com.journeyapps.barcodescanner.ScanOptions
 
 class QRScanActivity : AppCompatActivity() {
 
-    // Register for activity result for camera permission
     private val requestPermissionLauncher =
-        registerForActivityResult(ActivityResultContracts.RequestPermission()) { isGranted: Boolean ->
+        registerForActivityResult(ActivityResultContracts.RequestPermission()) { isGranted ->
             if (isGranted) {
-                // Permission is granted. Continue the action or workflow in your app.
                 startQrScanner()
             } else {
-                // Explain to the user that the feature is unavailable because the
-                // features requires a permission that the user has denied.
-                Toast.makeText(this, "Camera permission is required to scan QR codes", Toast.LENGTH_LONG).show()
-                finish() // Close the activity if permission is denied
+                Toast.makeText(this, "Kamerazugriff abgelehnt", Toast.LENGTH_LONG).show()
+                finish()
             }
         }
 
-    // Register for activity result for the QR scanner
     private val barcodeLauncher = registerForActivityResult(ScanContract()) { result: ScanIntentResult ->
-        if (result.contents == null) {
-            Toast.makeText(this, "Scan cancelled or failed", Toast.LENGTH_LONG).show()
-        } else {
+        if (result.contents != null) {
             val contact = result.contents
-            Toast.makeText(this, "Scanned: $contact", Toast.LENGTH_SHORT).show()
-            // TODO: Process the scanned contact (save or pass it on)
-            // For example, you could pass it back to a calling activity:
-            // val returnIntent = Intent()
-            // returnIntent.putExtra("scanned_data", contact)
-            // setResult(Activity.RESULT_OK, returnIntent)
+            Toast.makeText(this, "Gescannt: $contact", Toast.LENGTH_SHORT).show()
+            // Hier kannst du den Wert weitergeben oder speichern
+        } else {
+            Toast.makeText(this, "Scan abgebrochen", Toast.LENGTH_SHORT).show()
         }
-        // Finish the activity after scanning or cancellation
         finish()
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        // No need to call setContentView if this activity is only for launching the scanner
-
         checkCameraPermissionAndStartScanner()
     }
 
     private fun checkCameraPermissionAndStartScanner() {
         when {
-            ContextCompat.checkSelfPermission(
-                this,
-                Manifest.permission.CAMERA
-            ) == PackageManager.PERMISSION_GRANTED -> {
-                // You can use the API that requires the permission.
+            ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED -> {
                 startQrScanner()
             }
             shouldShowRequestPermissionRationale(Manifest.permission.CAMERA) -> {
-                // In an educational UI, explain to the user why your app requires this
-                // permission for a specific feature to behave as expected, and what
-                // features are disabled if it's declined. In this UI, include a
-                // "cancel" or "no thanks" button that lets the user continue
-                // using your app without granting the permission.
-                // For this example, we'll just request it directly.
-                Toast.makeText(this, "Camera permission is needed to scan QR codes.", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Diese Funktion benötigt Kamerazugriff.", Toast.LENGTH_LONG).show()
                 requestPermissionLauncher.launch(Manifest.permission.CAMERA)
             }
             else -> {
-                // You can directly ask for the permission.
                 requestPermissionLauncher.launch(Manifest.permission.CAMERA)
             }
         }
     }
 
     private fun startQrScanner() {
-        val options = ScanOptions()
-        options.setPrompt("Scanne Gibberlink-QR") // "Scan Gibberlink QR Code"
-        options.setBeepEnabled(true)
-        options.setOrientationLocked(true)
-        // options.captureActivity = YourCustomCaptureActivity::class.java // If you have one
+        val options = ScanOptions().apply {
+            setPrompt("Scanne Gibberlink-QR")
+            setBeepEnabled(true)
+            setOrientationLocked(true)
+        }
         barcodeLauncher.launch(options)
     }
 }
