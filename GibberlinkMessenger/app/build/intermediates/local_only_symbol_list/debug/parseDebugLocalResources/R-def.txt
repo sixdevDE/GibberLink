@@ -1,0 +1,18 @@
+R_DEF: Internal format may change without notice
+local
+id btnSave
+id btn_contacts
+id btn_gibberlink
+id btn_name
+id chatInput
+id chatLog
+id chatSend
+id nameInput
+id qrImage
+layout activity_chat
+layout activity_contact_list
+layout activity_name_setup
+layout activity_qr_my_code
+layout activity_qr_scan
+layout activity_start
+mipmap gibber_icon

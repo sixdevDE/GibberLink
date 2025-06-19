@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.sixdev.gibberlink">
+
+    <application
+        android:exported="true"
+        android:icon="@mipmap/gibber_icon"
+        android:label="GibberlinkMessenger"
+        android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar">
+
+        <!-- Start-Activity (Launcher) -->
+        <activity
+            android:name="com.sixdev.gibberlink.StartActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Weitere Aktivitäten -->
+        <activity android:name="com.sixdev.gibberlink.NameSetupActivity" />
+        <activity android:name="com.sixdev.gibberlink.ContactListActivity" />
+        <activity android:name="com.sixdev.gibberlink.QRMyCodeActivity" />
+        <activity
+            android:name="com.sixdev.gibberlink.QRScanActivity"
+            android:exported="true" />
+        <activity android:name="com.sixdev.gibberlink.ChatActivity" />
+
+        <!-- Zxing-CaptureActivity mit Theme-Konfliktauflösung -->
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            tools:replace="android:theme" />
+    </application>
+</manifest>
