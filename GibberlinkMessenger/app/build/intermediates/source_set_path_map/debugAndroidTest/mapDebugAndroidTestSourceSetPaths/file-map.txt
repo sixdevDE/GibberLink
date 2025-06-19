@@ -1,4 +1,4 @@
-com.sixdev.gibberlink.test.app-androidTest-0 C:\Users\staud\Downloads\complete\GibberlinkMessenger\app\build\generated\res\resValues\androidTest\debug
-com.sixdev.gibberlink.test.app-mergeDebugAndroidTestResources-1 C:\Users\staud\Downloads\complete\GibberlinkMessenger\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
-com.sixdev.gibberlink.test.app-mergeDebugAndroidTestResources-2 C:\Users\staud\Downloads\complete\GibberlinkMessenger\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
-com.sixdev.gibberlink.test.app-debugAndroidTest-3 C:\Users\staud\Downloads\complete\GibberlinkMessenger\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources
+com.sixdev.gibberlink.test.app-androidTest-0 C:\Users\staud\Downloads\complete\GibberLink Git\GibberlinkMessenger\app\build\generated\res\resValues\androidTest\debug
+com.sixdev.gibberlink.test.app-mergeDebugAndroidTestResources-1 C:\Users\staud\Downloads\complete\GibberLink Git\GibberlinkMessenger\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.sixdev.gibberlink.test.app-mergeDebugAndroidTestResources-2 C:\Users\staud\Downloads\complete\GibberLink Git\GibberlinkMessenger\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.sixdev.gibberlink.test.app-debugAndroidTest-3 C:\Users\staud\Downloads\complete\GibberLink Git\GibberlinkMessenger\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

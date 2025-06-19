@@ -28,10 +28,10 @@ com.sixdev.gibberlink.app-transition-1.5.0-26 C:\Users\staud\.gradle\caches\8.12
 com.sixdev.gibberlink.app-jetified-core-ktx-1.16.0-27 C:\Users\staud\.gradle\caches\8.12\transforms\e3e9b4e4fa927bb33dfc40bbaefd1cec\transformed\jetified-core-ktx-1.16.0\res
 com.sixdev.gibberlink.app-coordinatorlayout-1.1.0-28 C:\Users\staud\.gradle\caches\8.12\transforms\e623326d5c8004c044b91de91e793f82\transformed\coordinatorlayout-1.1.0\res
 com.sixdev.gibberlink.app-fragment-1.5.4-29 C:\Users\staud\.gradle\caches\8.12\transforms\fe0e1bf4a585a3dc5690427a57c0beee\transformed\fragment-1.5.4\res
-com.sixdev.gibberlink.app-pngs-30 C:\Users\staud\Downloads\complete\GibberlinkMessenger\app\build\generated\res\pngs\debug
-com.sixdev.gibberlink.app-resValues-31 C:\Users\staud\Downloads\complete\GibberlinkMessenger\app\build\generated\res\resValues\debug
-com.sixdev.gibberlink.app-packageDebugResources-32 C:\Users\staud\Downloads\complete\GibberlinkMessenger\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.sixdev.gibberlink.app-packageDebugResources-33 C:\Users\staud\Downloads\complete\GibberlinkMessenger\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.sixdev.gibberlink.app-debug-34 C:\Users\staud\Downloads\complete\GibberlinkMessenger\app\build\intermediates\merged_res\debug\mergeDebugResources
-com.sixdev.gibberlink.app-debug-35 C:\Users\staud\Downloads\complete\GibberlinkMessenger\app\src\debug\res
-com.sixdev.gibberlink.app-main-36 C:\Users\staud\Downloads\complete\GibberlinkMessenger\app\src\main\res
+com.sixdev.gibberlink.app-pngs-30 C:\Users\staud\Downloads\complete\GibberLink Git\GibberlinkMessenger\app\build\generated\res\pngs\debug
+com.sixdev.gibberlink.app-resValues-31 C:\Users\staud\Downloads\complete\GibberLink Git\GibberlinkMessenger\app\build\generated\res\resValues\debug
+com.sixdev.gibberlink.app-packageDebugResources-32 C:\Users\staud\Downloads\complete\GibberLink Git\GibberlinkMessenger\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.sixdev.gibberlink.app-packageDebugResources-33 C:\Users\staud\Downloads\complete\GibberLink Git\GibberlinkMessenger\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.sixdev.gibberlink.app-debug-34 C:\Users\staud\Downloads\complete\GibberLink Git\GibberlinkMessenger\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.sixdev.gibberlink.app-debug-35 C:\Users\staud\Downloads\complete\GibberLink Git\GibberlinkMessenger\app\src\debug\res
+com.sixdev.gibberlink.app-main-36 C:\Users\staud\Downloads\complete\GibberLink Git\GibberlinkMessenger\app\src\main\res
